@@ -21,7 +21,7 @@ if (isset($_POST['key'])) {
         if (move_uploaded_file($_FILES['d']['tmp_name'], $target)) {
             $target_parts = explode("/u/", $target);
             //echo $uploadhost . end($target_parts);
-            echo $uploadhost . "img.php?i=" . $_POST['name'];
+            echo $uploadhost . "img.php?i=" . $_POST['name'] . "." . end($parts);
         } else {
             echo "Sorry, there was a problem uploading your file. (Ensure your directory has 777 permissions)";
         }
