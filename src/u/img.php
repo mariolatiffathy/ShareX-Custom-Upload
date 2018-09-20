@@ -1,5 +1,5 @@
 <?php
-$config = include('u/config.php');
+$config = include('config.php');
 if(!isset($_GET['i']) || empty($_GET['i'])) { die("The image field is required."); }
 ?>
 <html>
